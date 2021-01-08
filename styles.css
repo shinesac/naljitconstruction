@@ -1,0 +1,193 @@
+body{
+    overflow-x: hidden;
+}
+#banner {
+    background-color:rgb(48, 58, 58);  
+    color:aliceblue;
+    font-size: 30px;
+    text-align: center;
+}
+
+
+header h1 {
+    margin: 0 auto;
+    padding-top: 15px;
+}
+
+nav {
+    background-color:firebrick;
+    padding: 1px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: navy;
+}
+
+ul#navigation{
+    color: navy;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 30px;
+    flex-wrap: wrap;
+}
+
+nav li,
+#list li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+#home {
+    background-image: url(gazebo.jpg);
+    height: 100vh;
+    background-size: cover;
+}
+
+main h1,
+#list {
+    color: aliceblue;
+    margin: 0 auto;
+    min-width: 100vw;
+    text-align: center;
+}
+
+
+
+
+#company {
+    font-size: 60px;
+    color: navy;
+    text-shadow: rgb(167, 165, 165) 5px 0.4px 8px ;
+    margin-left: 25vw;
+    /* text-align: center; */
+    
+
+}
+
+#gallery {
+    color: navy;
+    align-self: flex-end;
+    background-color: whitesmoke;
+    padding: 10px;
+    border:rgb(48, 58, 58)solid 5px;
+    box-shadow: slategray 20px inset;
+    border-radius: 50px;
+    margin-right: 25px;
+
+}
+
+#gallery:hover {
+    color: firebrick;
+}
+
+.zoom {
+    transition: transform .2s ease;
+}
+
+.zoom:hover{
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.10); 
+}
+
+  #info,
+#listing {
+    background-color:rgb(48, 58, 58);
+    opacity: 0.8;
+}
+
+#list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 15px;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    flex-wrap: wrap;
+}
+
+footer {
+    background-color: rgb(48, 58, 58);
+    display: flex;
+    text-align: center; 
+    flex-direction: row;
+    justify-content: space-evenly;   
+    line-height: 1.15;
+    padding: 1%;
+    border-top: silver 3px solid;
+    color: whitesmoke;
+    margin: 0;
+}
+
+footer a {
+    color: whitesmoke;
+}
+
+.copyright {
+    margin:0;
+}
+
+#kieologo {
+    width: 30px;
+    height: 30px;
+}  
+
+main h1 {
+    font-size: 30px;
+    padding-bottom: 3px;
+    padding-top: 10px;
+}
+
+/* Style all font awesome icons */
+#fb {
+    padding: 10px;
+    font-size: 25px;
+    width: 5px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-facebook {
+    color: white;
+  }
+
+#pictures {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    min-height: 100vh;
+    margin: 2px;
+}
+
+#pictures img {
+    width: 150px;
+    height: 150px;
+    margin-top: 5px;
+    transition: 1s;
+    padding: 5px;
+}
+
+#pictures img:hover {
+    border: navy solid 3px;
+    filter: grayscale(100%);
+    transform: scale(1.1);
+}
+
+  
