@@ -271,6 +271,7 @@ a[href^=tel] {
     #gallery {
         margin-right: 0;
     }
+}
 
 @media screen and (max-width: 450px) {
     #banner {
@@ -293,9 +294,10 @@ a[href^=tel] {
     footer {
         display: block;
         padding: 2%;
+        
     }
-
-
+}
+ 
 @media screen and (max-width: 380px) {
 
     #gallist {
