@@ -35,8 +35,8 @@
         </div>
             <nav>
               <ul id="navigation"> 
-                <li><a id="company" href="index.html">Naljit Contruction Corp.</a></li>  
-                <li class="zoom"><a id="gallery" href="gallery.html">Gallery</a></li>
+                <li id="co"><a id="company" href="index.html">Naljit Construction Corp.</a></li>  
+                <li class="zoom" id="gallist"><a id="gallery" href="gallery.html">Gallery</a></li>
              </ul>
 
         </nav>
@@ -47,6 +47,7 @@
             <h1>Fully Licensed & Insured</h1>
             <h1>Specializing in Indoor & Outdoor Work</h1>
         </section>
+
 
         <section id="listing">
             <ul id="list">
@@ -66,18 +67,23 @@
         </section>
        
 
+        <div class="menu" onclick="onClickMenu()">
+            <i class="fa fa-angle-double-down" aria-hidden="true" id="arrow"></i>
+        </div>
+
     </main>
 
     <footer>
-        
         <img src="logo1.jpg" id="kieologo">
         <p class="copyright"><small>&copy;2020 - Created by KIEO Web Solutions  </small></p>
         <a href="mailto:kieowebsolutions@gmail.com?subject=website%inquiry"><i class="fa fa-envelope"> <small>kieowebsolutions@gmail.com</small></i></a>
-        <i class="fa fa-phone"><small> (865) 307-3944</small> </i>    
+        <div id="phone">
+            <i class="fa fa-phone"><small> (865) 307-3944</small> </i>   
+        </div> 
              
            
     </footer>
 
 </body>
-
+<script src="script.js"></script>
 </html>

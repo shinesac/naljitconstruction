@@ -21,6 +21,7 @@ nav {
     margin-bottom: 5px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: navy;
+    text-align: center;
 }
 
 ul#navigation{
@@ -29,12 +30,16 @@ ul#navigation{
 }
 nav ul {
     display: flex;
-    flex-direction: row;
+    flex-direction: column-reverse;
     justify-content: space-between;
-    font-size: 30px;
+    font-size: 20px;
     flex-wrap: wrap;
 }
 
+#gallist {
+    align-self: flex-end;
+    margin-top: 1%;
+}
 nav li,
 #list li {
     list-style-type: none;
@@ -60,16 +65,10 @@ main h1,
 }
 
 
-
-
 #company {
-    font-size: 60px;
+    font-size: 50px;
     color: navy;
     text-shadow: rgb(167, 165, 165) 5px 0.4px 8px ;
-    margin-left: 25vw;
-    /* text-align: center; */
-    
-
 }
 
 #gallery {
@@ -107,11 +106,17 @@ main h1,
 #list {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     padding-top: 15px;
     font-size: 20px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     flex-wrap: wrap;
+}
+
+#listing {
+    display: flex;
+    justify-content: space-evenly;
+    padding-right: 2%;
 }
 
 footer {
@@ -190,4 +195,100 @@ main h1 {
     transform: scale(1.1);
 }
 
+#arrow {
+    font-size: 40px;
+    color: white;
+    background-color:rgb(48, 58, 58);
+    opacity: 0.8;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    display: none;
+}
+
+
+/* Media Queries */
+
+@media screen and (max-width: 1180px) {
+    #navigation {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 2%;
+    }
+
+    #list {
+        display: none;
+      }
+    
+      #list.change {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        line-height: 1.5;
+      }
+       
+
+    #gallist {
+        padding-top: 2%;
+        margin: 0 auto;
+        padding-bottom: 2%;
+    }
+
   
+    #arrow {
+        display: flex;
+    }
+
+    #arrow.switch {
+        -webkit-transform:rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+
+}
+
+@media screen and (max-width: 850px) {
+    #gallist {
+        padding-bottom: 5%;
+        padding-top: 5%;
+
+    }
+
+    #navigation {
+        padding-top: 2%;
+       }
+
+
+
+@media screen and (max-width: 450px) {
+    #banner {
+        font-size: 20px;
+    }
+    
+    #company {
+        font-size: 35px;
+    }
+
+    #gallist {
+        font-size: 20px;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    footer {
+        display: block;
+        padding: 2%;
+    }
+
+
+@media screen and (max-width: 380px) {
+
+    #gallist {
+        padding-top: 10%;
+        padding-bottom: 8%;
+    }
