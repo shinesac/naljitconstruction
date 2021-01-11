@@ -212,6 +212,9 @@ a[href^=tel] {
     text-decoration: none; 
 }
 
+.appleLinks a {color:#000000;}
+.appleLinksWhite a {color:#ffffff;}
+
 /* Media Queries */
 
 @media screen and (max-width: 1180px) {
