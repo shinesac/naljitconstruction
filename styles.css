@@ -27,6 +27,7 @@ nav {
 ul#navigation{
     color: navy;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-inline-start: 0;
 }
 nav ul {
     display: flex;
@@ -213,7 +214,6 @@ main h1 {
     #navigation {
         flex-direction: column;
         align-items: center;
-        padding-top: 2%;
     }
 
     #list {
@@ -258,9 +258,12 @@ main h1 {
 
     #navigation {
         padding-top: 2%;
+
        }
 
-
+    #gallery {
+        margin-right: 0;
+    }
 
 @media screen and (max-width: 450px) {
     #banner {
@@ -289,6 +292,16 @@ main h1 {
 @media screen and (max-width: 380px) {
 
     #gallist {
-        padding-top: 10%;
-        padding-bottom: 8%;
+        padding-top: 5%;
+        padding-bottom: 2%;
+        
     }
+}
+
+@media screen and (max-width: 380px) {
+    #gallist {
+        padding-top: 8%;
+        padding-bottom: 2%;
+        
+    }
+}
